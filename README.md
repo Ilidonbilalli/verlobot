@@ -116,6 +116,6 @@ tests/              analyzer tests (node tests/analyzer.test.js)
 - The MoR may take 1–3 days to approve; email orders work meanwhile.
 - The $10k/mo Watchtower converts best after a free report; Command ($20k/mo)
   needs a demo conversation (the playbook has the messages).
-  exact messages). The $500k goal needs ~40 audits + ~20 sprints + watch
-  subscriptions, or roughly 1–2 paid conversations per working day for 21 weeks.
+- The $1M goal needs ~10–15 clients: yearly prepays ($75k–150k each) stack the
+  fastest. That is roughly 1–2 paid conversations per working day for 21 weeks.
   That is the job. This repo makes the job possible; it cannot do it alone.
