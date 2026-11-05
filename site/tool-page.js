@@ -97,8 +97,8 @@
     h.push("</div>");
 
     if (!r.leaks.length) {
-      h.push('<div class="card"><h3>No leaks detected in this run.</h3><p class="muted">Either this log is clean or the patterns did not appear. A human review of 3 runs finds what heuristics miss \u2014 that is what the Deep Audit is for.</p>' +
-        '<a class="btn btn-primary" data-checkout="audit" data-product="Deep Audit">Book a Deep Audit</a></div>');
+      h.push('<div class="card"><h3>No leaks detected in this run.</h3><p class="muted">Either this log is clean or the patterns did not appear. A month of watching finds what one scan misses &mdash; that is what the Watchtower is for.</p>' +
+        '<a class="btn btn-primary" data-checkout="watch_mo" data-product="Watchtower — monthly">Start the Watchtower</a></div>');
     } else {
       for (var i = 0; i < r.leaks.length; i++) {
         var L = r.leaks[i];
@@ -112,9 +112,9 @@
         h.push("</div>");
       }
       h.push('<div class="card" style="margin-top:18px"><h3>Want these fixed, not just found?</h3>' +
-        '<p class="muted">The Deep Audit turns this into a ranked fix plan. The Fix Sprint implements it and proves before/after numbers.</p>' +
-        '<div class="toolbar"><a class="btn btn-primary" data-checkout="audit" data-product="Deep Audit">Deep Audit</a>' +
-        '<a class="btn" data-checkout="sprint" data-product="Fix Sprint">Fix Sprint</a></div></div>');
+        '<p class="muted">The Watchtower finds, alerts, and fixes &mdash; every month. Command adds the Loop Killer and auto-fix queue.</p>' +
+        '<div class="toolbar"><a class="btn btn-primary" data-checkout="watch_mo" data-product="Watchtower — monthly">Start the Watchtower</a>' +
+        '<a class="btn" data-checkout="command_mo" data-product="Command — monthly">Go Command</a></div></div>');
     }
 
     h.push('<p class="small muted" style="margin-top:14px">Heuristic scan of ' + esc(parsed.lineCount) + " lines. Heuristics can miss things and can occasionally over-count. For a human-verified report, book an audit.</p>");

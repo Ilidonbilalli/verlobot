@@ -5,9 +5,9 @@ window.VERLOBOT_CONFIG = {
   contactEmail: "hello@verlobot.com",
   thankYouUrl: "thanks.html",
   checkout: {
-    audit: "",   // e.g. https://checkout.agentaos.ai/... or Polar/Creem/Dodo product link
-    sprint: "",
-    watch: "",
-    enterprise: ""   // Enterprise Cockpit — $50,000/year (card or invoice)
+    watch_mo: "",    // Watchtower — $10,000/month subscription
+    watch_yr: "",    // Watchtower — $75,000/year subscription
+    command_mo: "",  // Command — $20,000/month subscription
+    command_yr: ""   // Command — $150,000/year subscription
   }
 };

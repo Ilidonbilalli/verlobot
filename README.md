@@ -1,12 +1,15 @@
 # Verlobot — README
 
 **What this is:** a ready-to-deploy product. A free in-browser tool that finds the
-hidden failures in AI agent logs ("Agent Autopsy"), plus paid tiers sold on the
-same site: Deep Audit ($950), Fix Sprint ($12,000), Watch ($1,500/mo), and
-Enterprise Cockpit ($50,000/year).
+hidden failures in AI agent logs ("Agent Autopsy"), plus subscriptions sold on the
+same site: Watchtower ($10,000/mo or $75,000/yr) and Command ($20,000/mo or
+$150,000/yr). Founding clients: first 3 lock their price for 24 months.
 
 **What it is not:** a promise that a website alone makes $500k. The site is the
 store; the outreach playbook in `marketing/` is the engine. Do both.
+
+**Legal pack:** see `LICENSE`, `THIRD_PARTY.md`, and `docs/legal-rules.md` — original
+assets only, no fake claims, no GPL code, no trending music in branded videos.
 
 **Live now:** GitHub Pages deploys automatically on every push to `main`
 (`.github/workflows/pages.yml`). Repo: `github.com/Ilidonbilalli/verlobot` &rarr;
@@ -71,9 +74,10 @@ window.VERLOBOT_CONFIG = {
   contactEmail: "hello@verlobot.com",
   thankYouUrl: "thanks.html",
   checkout: {
-    audit:  "https://...",  // Deep Audit — $950
-    sprint: "https://...",  // Fix Sprint — $12,000
-    watch:  "https://..."   // Watch — $1,500/mo subscription
+    watch_mo:   "https://...",  // Watchtower — $10,000/month subscription
+    watch_yr:   "https://...",  // Watchtower — $75,000/year subscription
+    command_mo: "https://...",  // Command — $20,000/month subscription
+    command_yr: "https://..."   // Command — $150,000/year subscription
   }
 };
 ```
@@ -110,7 +114,8 @@ tests/              analyzer tests (node tests/analyzer.test.js)
 
 - A deployed site with no traffic sells nothing. The playbook fixes that.
 - The MoR may take 1–3 days to approve; email orders work meanwhile.
-- $950 audits convert; $12k sprints need conversations (the playbook has the
+- The $10k/mo Watchtower converts best after a free report; Command ($20k/mo)
+  needs a demo conversation (the playbook has the messages).
   exact messages). The $500k goal needs ~40 audits + ~20 sprints + watch
   subscriptions, or roughly 1–2 paid conversations per working day for 21 weeks.
   That is the job. This repo makes the job possible; it cannot do it alone.

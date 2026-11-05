@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy — Verlobot</title>
+  <link rel="icon" href="assets/avatar.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/avatar.png" alt="Verlobot" /> Verlobot</a>
+    </div>
+  </header>
+  <main class="container" style="max-width:820px">
+    <section class="tight" style="padding-top:44px">
+      <h1>Privacy</h1>
+      <p class="lead">Short version: the free tool never sees your logs. For paid plans, we only handle what you choose to send us.</p>
+
+      <div class="card" style="margin-top:20px">
+        <h3>Free autopsy tool</h3>
+        <p class="muted">Runs entirely in your browser. Your log file is read locally by the page's own code and is never uploaded, stored, or transmitted. You can verify this with your browser's developer tools &mdash; close the tab and everything is gone.</p>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Paid plans (Watchtower / Command)</h3>
+        <p class="muted">We receive only the logs or repository access you choose to share. We use them for one purpose: finding and fixing reliability failures for you. We delete them on request, and no later than 30 days after your subscription ends. We never resell your data.</p>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Payments</h3>
+        <p class="muted">Payments are processed by a licensed Merchant of Record, which acts as the seller for tax purposes worldwide. Your card details go to them, not to us. Their privacy policy applies to payment data.</p>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Contact</h3>
+        <p class="muted">Questions or deletion requests: <a data-email data-email="text" href="#"></a>.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="container row">
+      <span class="small"><a href="index.html">Home</a> &middot; <a href="terms.html">Terms</a></span>
+      <span class="small">&copy; <span id="year"></span> Verlobot</span>
+    </div>
+  </footer>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

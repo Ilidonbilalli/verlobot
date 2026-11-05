@@ -106,3 +106,12 @@ deep audits, two-week fix sprints, and continuous watching.
 
 Keep posts as awareness. Deals come from DMs/emails to people who ship agents.
 Templates in `outreach-playbook.md`.
+
+## 6) Rules we never break
+
+- Only original assets. No images, logos, or fonts from Google/random sites.
+- Trending music is for personal posts only — never ads/branded videos.
+  Branded videos use royalty-free music; keep the license link.
+- No fake "as seen in ..." claims, no fake reviews, no made-up numbers.
+- Don't imitate famous brand marks when making new logos.
+Full checklist: `docs/legal-rules.md`.

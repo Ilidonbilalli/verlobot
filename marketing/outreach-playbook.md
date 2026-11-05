@@ -1,10 +1,15 @@
-# Outreach playbook — the first sale in 7–14 days
+# Outreach playbook — first paying client in 7–14 days
 
 The site makes you credible. This playbook makes you money. Budget ~3 hours a
 day for 2 weeks. Track everything in the checklist at the bottom.
 
-**Goal:** 1 paid Deep Audit ($950) within 2 weeks. After the first one, the
-second is 5x easier — you have proof.
+**Goal:** 1 paying Watchtower client ($10k/mo) — or the founding deal
+(month one credited if the first report finds nothing actionable). After the
+first one, the second is 5x easier — you have proof.
+
+**Never break these:** original assets only; no fake "as seen in" claims; no
+fake reviews; no trending music in branded videos; no stolen logos.
+Full rules: `docs/legal-rules.md`.
 
 ---
 
@@ -21,7 +26,7 @@ second is 5x easier — you have proof.
 Every working day, in this order:
 
 **A. 20–30 personal messages (90 minutes).** People who run agents in prod:
-- AI startups with agent products (YC/Seed lists, Product Hunt "AI agents", 
+- AI startups with agent products (YC/Seed lists, Product Hunt "AI agents",
   "agent" on GitHub trending)
 - Agencies that build agents for clients
 - Dev-tool founders with agent features
@@ -48,8 +53,9 @@ I ran the public demo logs/examples I could find for <product> through our
 autopsy tool and saw the classic pattern: <one concrete thing — a loop, a
 "done" with no evidence, an empty turn>. Happy to send the 1-page report, free.
 
-If it's useful, our deep audit is a fixed $950 (human-reviewed, 72h). If not,
-take the report and run — no pitch after that.
+If it's useful: we watch and fix agent reliability on a monthly subscription
+(Watchtower). First report is free either way — if it finds nothing actionable,
+month one is credited.
 
 Want the report?
 
@@ -68,19 +74,19 @@ you what it finds? Free, no strings.
 ### Message template C — agency/integration partner angle
 
 ```
-Hi <name> — you ship agents for clients. We audit agent reliability: fixed
-$950, report in 72h, and we show before/after numbers your client can see.
-
-If you have a client with a flaky agent, I'll run the first audit free as a
-sample. If it's good, you resell it at your margin and we do the work.
+Hi <name> — you ship agents for clients. We run reliability watchtowers:
+monthly finding + fixing, audit-ready reports. First month credited if the
+first report finds nothing actionable. Want me to run the first month on
+your most flaky client agent, free? If it's good, you resell it.
 ```
 
 ### When they say yes
 
 1. Send `https://verlobot.com/tool.html` + "paste your log, send me the report,
    or send me the raw log".
-2. Run the audit. Produce the report. Deliver within 72h, always.
-3. Ask exactly one question at the end: *"Should I also quote the fix sprint?"*
+2. Run it live with them. Show the leaks. That demo closes.
+3. Close with: *"Should I set up the Watchtower this week or start with
+   Command for the Loop Killer?"*
 
 ### When they say "not now"
 
@@ -104,26 +110,30 @@ Then stop. No third message.
 | 2 | 25 messages + answer everyone + 1 community post | 1 "send me the report" |
 | 3 | Same + follow-ups from day 1 | 1st free report delivered |
 | 4 | 25 messages + Reddit post (launch-kit #3) | 2nd report requested |
-| 5 | 25 messages + LinkedIn post | First audit offer sent |
-| 6 | Follow-ups + one "found this in a public log" post | First sale conversation |
-| 7 | Close the sale (payment link or invoice) | **$950 in** |
+| 5 | 25 messages + LinkedIn post | First subscription offer sent |
+| 6 | Follow-ups + one "found this in a public log" post | First close conversation |
+| 7 | Close the sale (payment link or invoice) | **First month billed** |
 
 ## Objections, answered in one line
 
 - **"We'll do it ourselves"** → "Great — here's the report format we use; if
-  you want a second set of eyes for $950, we're here."
+  you want a second set of eyes monthly, we're here."
 - **"We don't have logs"** → "Your agent prints something every run. JSONL,
   JSON, or raw text — the tool handles all three."
 - **"Is this private?"** → "The free tool never uploads anything; check
   DevTools. Paid work: NDA on request, deletion in writing."
-- **"$950 is a lot"** → "One bad agent day costs more. And if the audit finds
-  nothing you didn't know, it's free."
-- **"$12k is a lot"** → milestone payments: $3k to start, $9k on proof.
+- **"$10k/month is a lot"** → "One bad agent day costs more. And if the first
+  report finds nothing actionable, month one is credited."
+- **"Why not Datadog/LangSmith?"** → "They show you dashboards. We find the
+  failures, fix them, and hand you the audit-ready report. Cheapest way to
+  get all three."
+- **"Can we do yearly?"** → Yes: $75k Watchtower / $150k Command, founding
+  clients lock their price for 24 months.
 
 ## Tracking (copy into a sheet)
 
 ```
-name | company | channel (email/DM/community) | sent | replied | report sent | audit offered | paid | next action + date
+name | company | channel (email/DM/community) | sent | replied | report sent | offer sent | paid | next action + date
 ```
 
 Review every evening for 10 minutes: who replied, who to follow up, what
@@ -132,6 +142,7 @@ message got the best response. Double down on whichever template gets answers.
 ## The honest math
 
 - 300 messages over 2 weeks → ~10% reply → ~30 conversations → ~5 free reports
-  → 1–2 paid audits. That is normal for cold outreach. Volume + honesty wins.
-- One paid audit ($950) is the whole goal of phase 1. It becomes the case
-  study for the Fix Sprints ($12k). The $500k year is a stack of these.
+  → 1–2 subscriptions. That is normal for cold outreach. Volume + honesty wins.
+- One paying client ($10k/mo, or the founding yearly deal) is the whole goal
+  of phase 1. It becomes the case study for the rest: the path to $1M by
+  April is 10–15 of these, stackable with yearly prepays ($75k–150k each).

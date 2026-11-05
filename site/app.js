@@ -6,7 +6,7 @@
   var links = cfg.checkout || {};
 
   // Wire checkout buttons inside a root element (default: whole document).
-  // <a data-checkout="audit" data-product="Deep Audit">
+  // <a data-checkout="watch_mo" data-product="Watchtower — monthly">
   function wireCheckout(rootElement) {
     var root = rootElement || document;
     var nodes = root.querySelectorAll("[data-checkout]");

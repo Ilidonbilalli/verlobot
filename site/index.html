@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Verlobot — we find why your AI agents fail silently, then fix it</title>
-  <meta name="description" content="Verlobot catches AI agents lying, looping, and silently failing. Free in-browser log autopsy; paid deep audits, fix sprints, and watch subscriptions." />
+  <meta name="description" content="Verlobot catches AI agents lying, looping, and silently failing. Free in-browser log autopsy; monthly watching, fixing, and audit-ready reports." />
   <link rel="icon" href="assets/avatar.png" />
   <link rel="stylesheet" href="styles.css" />
   <meta property="og:title" content="Verlobot — the AI agent doctor" />
-  <meta property="og:description" content="Find the silent failures in your AI agents: free autopsy in the browser, deep audit, fix sprint, watch." />
+  <meta property="og:description" content="Find the silent failures in your AI agents: free autopsy in the browser, then monthly watching and fixing." />
   <meta property="og:image" content="assets/avatar.png" />
 </head>
 <body>
@@ -30,7 +30,7 @@
       <div class="container">
         <span class="kicker">For teams running AI agents in production</span>
         <h1>Your AI agent fails silently.<br />We find it, fix it, and prove it.</h1>
-        <p class="lead">Agents freeze, loop, lie about success, and soften tests to pass. All of it hides inside the logs. Verlobot reads those logs, shows you exactly what's breaking &mdash; then fixes it and shows before/after numbers.</p>
+        <p class="lead">Agents freeze, loop, lie about success, and soften tests to pass. All of it hides inside the logs. Verlobot reads those logs, shows you exactly what's breaking &mdash; then watches and fixes it, every month.</p>
         <div class="actions">
           <a class="btn btn-primary btn-big" href="tool.html">Run the free autopsy</a>
           <a class="btn btn-big" href="#pricing">See pricing</a>
@@ -64,8 +64,8 @@
         <h2>How it works</h2>
         <div class="grid cols-3" style="margin-top:26px">
           <div class="card"><h3>1 &middot; Run the free autopsy</h3><p class="muted">Drop your agent logs into the browser tool. Instant report, nothing uploaded, nothing stored.</p></div>
-          <div class="card"><h3>2 &middot; Get the deep audit</h3><p class="muted">We review the leaks a human should verify, rank them by cost, and write the fix plan with evidence.</p></div>
-          <div class="card"><h3>3 &middot; We fix it &mdash; or watch it</h3><p class="muted">A Fix Sprint implements the repairs and proves before/after. Watch keeps regressions from coming back.</p></div>
+          <div class="card"><h3>2 &middot; We connect the watchtower</h3><p class="muted">One command, read-only. Alerts the moment an agent loops, goes silent, or claims success it can't prove.</p></div>
+          <div class="card"><h3>3 &middot; We fix it, monthly</h3><p class="muted">Fixes shipped as reviewable changes + an audit-ready report every month. Cancel anytime.</p></div>
         </div>
       </div>
     </section>
@@ -75,66 +75,53 @@
     <section id="pricing">
       <div class="container">
         <h2>Pricing</h2>
-        <p class="lead">Start free. Pay only when you want it found, fixed, or watched.</p>
+        <p class="lead">One subscription. The free autopsy stays free forever. Monthly or yearly &mdash; cancel anytime.</p>
 
-        <div class="grid cols-3 prices" style="margin-top:26px">
+        <div class="card" style="margin-top:26px; border-color: var(--brand2)">
+          <p class="muted" style="margin:0"><b style="color: var(--brand2)">Founding clients:</b> the first 3 lock their price for 24 months &mdash; and month one is credited if the first report finds nothing actionable.</p>
+        </div>
+
+        <div class="grid cols-2 prices" style="margin-top:26px">
           <div class="card price">
-            <h3>Deep Audit</h3>
-            <div class="amount">$950 <span class="was">$2,500</span></div>
-            <p class="small muted">Founding price &mdash; first 5 customers.</p>
+            <h3>Watchtower</h3>
+            <div class="amount">$10,000<span class="muted" style="font-size:1rem">/mo</span></div>
+            <p class="small muted">or $75,000/year &mdash; save $45,000</p>
             <ul>
-              <li>Human-verified report on up to 3 agent runs</li>
-              <li>Leaks ranked by cost and risk</li>
-              <li>Line-by-line evidence for every finding</li>
-              <li>Prioritized fix plan you can hand to your team</li>
-              <li>30-minute walkthrough call</li>
-              <li>Delivered within 72 hours</li>
+              <li>We connect to your agent logs &mdash; read-only, unplug anytime</li>
+              <li>Instant alerts: loops, silent turns, false success claims</li>
+              <li>Monthly reliability report with trends</li>
+              <li>Top failure fixes included every month</li>
+              <li>Email support, business-hours response</li>
+              <li>Cancel monthly anytime</li>
             </ul>
-            <a class="btn btn-primary" data-checkout="audit" data-product="Deep Audit">Book the audit</a>
+            <div class="btnrow">
+              <a class="btn btn-primary" data-checkout="watch_mo" data-product="Watchtower — monthly">Start monthly</a>
+              <a class="btn" data-checkout="watch_yr" data-product="Watchtower — yearly">Start yearly</a>
+            </div>
           </div>
 
           <div class="card price featured">
-            <span class="badge">Most popular</span>
-            <h3>Fix Sprint</h3>
-            <div class="amount">$12,000</div>
-            <p class="small muted">Two weeks, fixed scope.</p>
+            <span class="badge">Most complete</span>
+            <h3>Command</h3>
+            <div class="amount">$20,000<span class="muted" style="font-size:1rem">/mo</span></div>
+            <p class="small muted">or $150,000/year &mdash; save $90,000</p>
             <ul>
-              <li>Everything in Deep Audit</li>
-              <li>We implement the top failure fixes in your stack</li>
-              <li>Guards: no silent turns, no blind retries, no test edits</li>
-              <li>Before/after numbers on your own logs</li>
-              <li>Handover session + written runbook</li>
-              <li>Milestone payments available</li>
+              <li>Everything in Watchtower</li>
+              <li><b>Loop Killer:</b> auto-pause runaway agents</li>
+              <li>Auto-fix queue: repairs shipped as reviewable PRs</li>
+              <li>Audit-ready evidence pack, every month</li>
+              <li>Dedicated channel + 4-hour response SLA (business hours)</li>
+              <li>Quarterly deep review across every agent</li>
             </ul>
-            <a class="btn btn-primary" data-checkout="sprint" data-product="Fix Sprint">Book a sprint</a>
-          </div>
-
-          <div class="card price">
-            <h3>Watch</h3>
-            <div class="amount">$1,500<span class="muted" style="font-size:1rem">/mo</span></div>
-            <p class="small muted">After a sprint, or standalone.</p>
-            <ul>
-              <li>We re-run the autopsy on every release</li>
-              <li>Regression alerts: leaks coming back</li>
-              <li>Monthly health report with trends</li>
-              <li>Priority email support</li>
-              <li>Cancel anytime</li>
-            </ul>
-            <a class="btn" data-checkout="watch" data-product="Watch subscription">Start watching</a>
-          </div>
-        </div>
-
-        <div class="card" id="enterprise" style="margin-top:26px">
-          <h3>Enterprise Cockpit &mdash; <span style="color: var(--brand2)">$50,000/year</span></h3>
-          <p class="muted">For companies where agents touch customers, payments, or production. Everything in Watch, plus quarterly deep audits across every team, two Fix Sprints included per year, a 24-hour response SLA, and a named engineer on your account.</p>
-          <div class="toolbar">
-            <a class="btn btn-primary" data-checkout="enterprise" data-product="Enterprise Cockpit (annual)">Request access</a>
-            <span class="small muted">Card or invoice &middot; annual commitment &middot; limited onboarding each quarter.</span>
+            <div class="btnrow">
+              <a class="btn btn-primary" data-checkout="command_mo" data-product="Command — monthly">Start monthly</a>
+              <a class="btn" data-checkout="command_yr" data-product="Command — yearly">Start yearly</a>
+            </div>
           </div>
         </div>
 
         <div class="card" style="margin-top:26px">
-          <p class="muted" style="margin:0">Prefer to try before paying? <a href="tool.html">Run the free autopsy</a> &mdash; it works on any agent log and never uploads anything. Questions: <a data-email data-email="text" href="#"></a>.</p>
+          <p class="muted" style="margin:0">We are the cheapest way to get agents watched, fixed, and documented &mdash; enterprise observability contracts often run six figures a year and don't fix anything. Not sure yet? <a href="tool.html">Run the free autopsy</a> first &mdash; it never uploads anything. Questions: <a data-email data-email="text" href="#"></a>.</p>
         </div>
       </div>
     </section>
@@ -144,8 +131,9 @@
         <h2>FAQ</h2>
         <details class="faq"><summary>Is my data safe?</summary><p>The free tool runs entirely in your browser &mdash; nothing is uploaded, nothing is stored. For paid work we sign an NDA on request and only ask for the logs you choose to share, with a deletion window that we confirm in writing.</p></details>
         <details class="faq"><summary>What log formats do you support?</summary><p>JSONL (one JSON object per line), JSON arrays, and raw text logs. OpenAI, Anthropic, LangChain, Claude Code, custom agent frameworks &mdash; the parser is tolerant, and if a format is exotic we can adapt quickly.</p></details>
-        <details class="faq"><summary>How fast do I get results?</summary><p>Free autopsy: instant. Deep Audit: within 72 hours. Fix Sprint: two weeks, fixed scope with milestones.</p></details>
-        <details class="faq"><summary>What if you find nothing?</summary><p>You do not pay for the audit. If your logs are clean, we say so, in writing.</p></details>
+        <details class="faq"><summary>How fast do I get results?</summary><p>Free autopsy: instant. First watchtower report: within 7 days of connecting your logs. Alerts: minutes.</p></details>
+        <details class="faq"><summary>What if you find nothing?</summary><p>Month one is credited if the first report finds nothing actionable. If your logs are clean, we say so, in writing.</p></details>
+        <details class="faq"><summary>How do I cancel?</summary><p>Monthly: anytime. Yearly: stop the renewal at any time; access continues to the end of the paid term.</p></details>
         <details class="faq"><summary>Who are you?</summary><p>A small team that builds verification and evaluation tooling for agent systems. We keep our promise: find real failures, fix them, prove the numbers.</p></details>
         <details class="faq"><summary>Can you work with our stack?</summary><p>If your agent emits logs, yes. We stay out of your way: read-only review, minimal integration, everything changes behind a reviewable pull request.</p></details>
       </div>
@@ -165,7 +153,7 @@
   <footer class="site">
     <div class="container row">
       <span>Verlobot &middot; <a data-email data-email="text" href="#"></a></span>
-      <span class="small"><a href="#pricing">Pricing</a> &middot; <a href="tool.html">Free Autopsy</a></span>
+      <span class="small"><a href="#pricing">Pricing</a> &middot; <a href="tool.html">Free Autopsy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="privacy.html">Privacy</a></span>
       <span class="small">&copy; <span id="year"></span> Verlobot. All rights reserved.</span>
     </div>
   </footer>

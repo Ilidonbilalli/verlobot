@@ -95,6 +95,8 @@ hr.sep { border: none; border-top: 1px solid var(--line); margin: 0; }
 .price ul { margin: 8px 0 14px; padding-left: 18px; color: var(--muted); }
 .price li { margin: 6px 0; }
 .price .btn { margin-top: auto; }
+.price .btnrow { margin-top: auto; display: flex; gap: 10px; flex-wrap: wrap; }
+.price .btnrow .btn { margin-top: 0; }
 .price.featured { border-color: var(--brand); box-shadow: 0 10px 40px rgba(79, 124, 255, 0.22); }
 .badge {
   position: absolute; top: -12px; right: 16px; padding: 4px 10px; border-radius: 999px;
