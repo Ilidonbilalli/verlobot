@@ -7,6 +7,7 @@ window.VERLOBOT_CONFIG = {
   checkout: {
     audit: "",   // e.g. https://checkout.agentaos.ai/... or Polar/Creem/Dodo product link
     sprint: "",
-    watch: ""
+    watch: "",
+    enterprise: ""   // Enterprise Cockpit — $50,000/year (card or invoice)
   }
 };

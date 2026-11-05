@@ -1,11 +1,18 @@
 # Verlobot — README
 
 **What this is:** a ready-to-deploy product. A free in-browser tool that finds the
-hidden failures in AI agent logs ("Agent Autopsy"), plus three paid tiers sold on
-the same site: Deep Audit ($950), Fix Sprint ($12,000), Watch ($1,500/mo).
+hidden failures in AI agent logs ("Agent Autopsy"), plus paid tiers sold on the
+same site: Deep Audit ($950), Fix Sprint ($12,000), Watch ($1,500/mo), and
+Enterprise Cockpit ($50,000/year).
 
 **What it is not:** a promise that a website alone makes $500k. The site is the
 store; the outreach playbook in `marketing/` is the engine. Do both.
+
+**Live now:** GitHub Pages deploys automatically on every push to `main`
+(`.github/workflows/pages.yml`). Repo: `github.com/Ilidonbilalli/verlobot` &rarr;
+site: `https://ilidonbilalli.github.io/verlobot/`. To serve it on `verlobot.com`:
+point DNS at GitHub Pages (CNAME `@` and `www` &rarr; `ilidonbilalli.github.io`),
+then we switch the custom domain on in the repo settings.
 
 ---
 
