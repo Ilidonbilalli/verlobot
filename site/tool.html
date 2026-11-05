@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Autopsy — find why your AI agent fails silently | Verlobot</title>
+  <meta name="description" content="Free browser tool: paste your AI agent logs, get an instant failure report — silent turns, stuck loops, false success claims, weakened tests. Your logs never leave your machine." />
+  <link rel="icon" href="assets/avatar.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="Agent Autopsy — find why your AI agent fails silently" />
+  <meta property="og:description" content="Free, private, instant failure report for AI agent logs. Silent turns, loops, false claims, weakened tests." />
+  <meta property="og:image" content="assets/avatar.png" />
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/avatar.png" alt="Verlobot" /> Verlobot</a>
+      <nav class="links">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="tool.html">Free Autopsy</a>
+        <a class="btn btn-primary" href="tool.html">Run it now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="tight" style="padding-top:44px">
+      <h1>Agent Autopsy</h1>
+      <p class="lead">Paste your agent's logs. Get an instant report of the failures you can't see: turns that produce nothing, loops, false "it works" claims, tests softened to pass. Everything runs in your browser &mdash; <b>your logs never leave this machine.</b></p>
+    </section>
+
+    <section class="tight toolwrap">
+      <div class="drop" id="drop">
+        <p><b>Drop a log file here</b> or click to choose</p>
+        <p class="small muted">JSONL / JSON / raw text &middot; OpenAI, Anthropic, LangChain, custom formats &middot; up to 20&nbsp;MB</p>
+        <input type="file" id="file-input" accept=".jsonl,.json,.txt,.log,.md" style="display:none" />
+      </div>
+
+      <textarea id="log-input" placeholder='Paste log lines here, e.g. one JSON object per line:&#10;{"role":"assistant","content":"Let me run the tests."}&#10;{"role":"assistant","tool_calls":[{"function":{"name":"run","arguments":"{\"cmd\":\"pytest\"}"}}]}' spellcheck="false"></textarea>
+
+      <div class="toolbar">
+        <button class="btn btn-primary" id="run-btn">Analyze</button>
+        <button class="btn" id="sample-btn">Try a sample log</button>
+        <button class="btn btn-ghost" id="clear-btn">Clear</button>
+        <span id="status" class="small"></span>
+      </div>
+    </section>
+
+    <section class="tight report" id="report" aria-live="polite"></section>
+
+    <section class="tight" style="padding-bottom:70px">
+      <div class="card">
+        <h3>What it checks (8 leak types)</h3>
+        <div class="grid cols-2">
+          <div><p><b>Silent turns</b> &mdash; the model returns nothing. <br /><b>Stuck loops</b> &mdash; the same action re-run again and again.<br /><b>Error storms</b> &mdash; failing retry loops that never change strategy.<br /><b>False success</b> &mdash; "all tests pass" when the last run says otherwise.</p></div>
+          <div><p><b>Weakened tests</b> &mdash; skip / xfail / assert&nbsp;True sneaking in.<br /><b>Truncated output</b> &mdash; half-written files, unbalanced fences.<br /><b>Prose instead of action</b> &mdash; "let me check..." with no tool call.<br /><b>Context floods</b> &mdash; one giant output that buries the task.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container row">
+      <span>Verlobot &middot; <a data-email data-email="text" href="#"></a></span>
+      <span class="small">Free tool runs locally. <a href="index.html#pricing">Need it fixed? See pricing.</a></span>
+      <span class="small">&copy; <span id="year"></span> Verlobot</span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script src="analyzer.js"></script>
+  <script src="tool-page.js"></script>
+</body>
+</html>

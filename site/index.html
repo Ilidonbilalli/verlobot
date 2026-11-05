@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verlobot — we find why your AI agents fail silently, then fix it</title>
+  <meta name="description" content="Verlobot catches AI agents lying, looping, and silently failing. Free in-browser log autopsy; paid deep audits, fix sprints, and watch subscriptions." />
+  <link rel="icon" href="assets/avatar.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="Verlobot — the AI agent doctor" />
+  <meta property="og:description" content="Find the silent failures in your AI agents: free autopsy in the browser, deep audit, fix sprint, watch." />
+  <meta property="og:image" content="assets/avatar.png" />
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/avatar.png" alt="Verlobot" /> Verlobot</a>
+      <nav class="links">
+        <a href="#services">Services</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="tool.html">Free Autopsy</a>
+        <a class="btn btn-primary" href="#pricing">Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="kicker">For teams running AI agents in production</span>
+        <h1>Your AI agent fails silently.<br />We find it, fix it, and prove it.</h1>
+        <p class="lead">Agents freeze, loop, lie about success, and soften tests to pass. All of it hides inside the logs. Verlobot reads those logs, shows you exactly what's breaking &mdash; then fixes it and shows before/after numbers.</p>
+        <div class="actions">
+          <a class="btn btn-primary btn-big" href="tool.html">Run the free autopsy</a>
+          <a class="btn btn-big" href="#pricing">See pricing</a>
+        </div>
+        <p class="small muted" style="margin-top:14px">Free tool runs 100% in your browser. Your logs never leave your machine.</p>
+      </div>
+    </section>
+
+    <hr class="sep" />
+
+    <section id="services" class="tight">
+      <div class="container">
+        <h2>What we catch</h2>
+        <p class="lead">The eight leaks that quietly burn turns, points, and customers.</p>
+        <div class="grid cols-3" style="margin-top:26px">
+          <div class="card"><div class="ico">&#128263;</div><h3>Silent turns</h3><p class="muted">The model thinks, spends the budget, and returns nothing. The run stalls; nobody notices.</p></div>
+          <div class="card"><div class="ico">&#128260;</div><h3>Stuck loops</h3><p class="muted">The same command re-run again and again, expecting a different result.</p></div>
+          <div class="card"><div class="ico">&#128165;</div><h3>Error storms</h3><p class="muted">Failing retry loops that never change strategy, burning minutes and dollars.</p></div>
+          <div class="card"><div class="ico">&#127942;</div><h3>False success claims</h3><p class="muted">"All tests pass" &mdash; when the last run says 3 failed. The run ends on a lie.</p></div>
+          <div class="card"><div class="ico">&#129683;</div><h3>Weakened tests</h3><p class="muted">skip / xfail / assert True added to make things "pass". Fake greens, hidden reds.</p></div>
+          <div class="card"><div class="ico">&#9986;&#65039;</div><h3>Truncated output</h3><p class="muted">Half-written files and unbalanced fences &mdash; the fix breaks the build.</p></div>
+          <div class="card"><div class="ico">&#128172;</div><h3>Prose instead of action</h3><p class="muted">"Let me check the tests..." and no tool call. A turn that produces nothing.</p></div>
+          <div class="card"><div class="ico">&#127783;&#65039;</div><h3>Context floods</h3><p class="muted">One 200k-char log dump buries the task; everything after it is garbage.</p></div>
+          <div class="card" style="border-color: var(--brand)"><div class="ico">&#129658;</div><h3>And the fix</h3><p class="muted">Every leak has a known, cheap repair. We implement them and show before/after numbers.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="tight">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="grid cols-3" style="margin-top:26px">
+          <div class="card"><h3>1 &middot; Run the free autopsy</h3><p class="muted">Drop your agent logs into the browser tool. Instant report, nothing uploaded, nothing stored.</p></div>
+          <div class="card"><h3>2 &middot; Get the deep audit</h3><p class="muted">We review the leaks a human should verify, rank them by cost, and write the fix plan with evidence.</p></div>
+          <div class="card"><h3>3 &middot; We fix it &mdash; or watch it</h3><p class="muted">A Fix Sprint implements the repairs and proves before/after. Watch keeps regressions from coming back.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="sep" />
+
+    <section id="pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <p class="lead">Start free. Pay only when you want it found, fixed, or watched.</p>
+
+        <div class="grid cols-3 prices" style="margin-top:26px">
+          <div class="card price">
+            <h3>Deep Audit</h3>
+            <div class="amount">$950 <span class="was">$2,500</span></div>
+            <p class="small muted">Founding price &mdash; first 5 customers.</p>
+            <ul>
+              <li>Human-verified report on up to 3 agent runs</li>
+              <li>Leaks ranked by cost and risk</li>
+              <li>Line-by-line evidence for every finding</li>
+              <li>Prioritized fix plan you can hand to your team</li>
+              <li>30-minute walkthrough call</li>
+              <li>Delivered within 72 hours</li>
+            </ul>
+            <a class="btn btn-primary" data-checkout="audit" data-product="Deep Audit">Book the audit</a>
+          </div>
+
+          <div class="card price featured">
+            <span class="badge">Most popular</span>
+            <h3>Fix Sprint</h3>
+            <div class="amount">$12,000</div>
+            <p class="small muted">Two weeks, fixed scope.</p>
+            <ul>
+              <li>Everything in Deep Audit</li>
+              <li>We implement the top failure fixes in your stack</li>
+              <li>Guards: no silent turns, no blind retries, no test edits</li>
+              <li>Before/after numbers on your own logs</li>
+              <li>Handover session + written runbook</li>
+              <li>Milestone payments available</li>
+            </ul>
+            <a class="btn btn-primary" data-checkout="sprint" data-product="Fix Sprint">Book a sprint</a>
+          </div>
+
+          <div class="card price">
+            <h3>Watch</h3>
+            <div class="amount">$1,500<span class="muted" style="font-size:1rem">/mo</span></div>
+            <p class="small muted">After a sprint, or standalone.</p>
+            <ul>
+              <li>We re-run the autopsy on every release</li>
+              <li>Regression alerts: leaks coming back</li>
+              <li>Monthly health report with trends</li>
+              <li>Priority email support</li>
+              <li>Cancel anytime</li>
+            </ul>
+            <a class="btn" data-checkout="watch" data-product="Watch subscription">Start watching</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:26px">
+          <p class="muted" style="margin:0">Prefer to try before paying? <a href="tool.html">Run the free autopsy</a> &mdash; it works on any agent log and never uploads anything. Questions: <a data-email data-email="text" href="#"></a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="tight">
+      <div class="container">
+        <h2>FAQ</h2>
+        <details class="faq"><summary>Is my data safe?</summary><p>The free tool runs entirely in your browser &mdash; nothing is uploaded, nothing is stored. For paid work we sign an NDA on request and only ask for the logs you choose to share, with a deletion window that we confirm in writing.</p></details>
+        <details class="faq"><summary>What log formats do you support?</summary><p>JSONL (one JSON object per line), JSON arrays, and raw text logs. OpenAI, Anthropic, LangChain, Claude Code, custom agent frameworks &mdash; the parser is tolerant, and if a format is exotic we can adapt quickly.</p></details>
+        <details class="faq"><summary>How fast do I get results?</summary><p>Free autopsy: instant. Deep Audit: within 72 hours. Fix Sprint: two weeks, fixed scope with milestones.</p></details>
+        <details class="faq"><summary>What if you find nothing?</summary><p>You do not pay for the audit. If your logs are clean, we say so, in writing.</p></details>
+        <details class="faq"><summary>Who are you?</summary><p>A small team that builds verification and evaluation tooling for agent systems. We keep our promise: find real failures, fix them, prove the numbers.</p></details>
+        <details class="faq"><summary>Can you work with our stack?</summary><p>If your agent emits logs, yes. We stay out of your way: read-only review, minimal integration, everything changes behind a reviewable pull request.</p></details>
+      </div>
+    </section>
+
+    <section class="tight" style="padding-bottom:80px">
+      <div class="container">
+        <div class="card" style="text-align:center; padding:40px 22px">
+          <h2 style="margin-bottom:8px">Your agent is probably leaking turns right now.</h2>
+          <p class="lead" style="margin:0 auto 22px">It takes 60 seconds to know. Paste a log, read the report.</p>
+          <a class="btn btn-primary btn-big" href="tool.html">Run the free autopsy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container row">
+      <span>Verlobot &middot; <a data-email data-email="text" href="#"></a></span>
+      <span class="small"><a href="#pricing">Pricing</a> &middot; <a href="tool.html">Free Autopsy</a></span>
+      <span class="small">&copy; <span id="year"></span> Verlobot. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
