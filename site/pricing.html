@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing — Verlobot</title>
+  <meta name="description" content="Watchtower $15,000/mo ($100k/yr). Command $25,000/mo ($180k/yr). Founding price locked 24 months. Month one credited if nothing actionable is found." />
+  <link rel="icon" href="assets/avatar.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/avatar.png" alt="Verlobot" /> Verlobot</a>
+      <nav class="links">
+        <a href="tool.html">Free Autopsy</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a href="security.html">Security</a>
+        <a class="btn btn-primary" href="#plans">Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="tight" style="padding-top:44px">
+      <div class="container">
+        <h1>Pricing</h1>
+        <p class="lead">Two plans. No per-seat tax, no "contact us" maze. Everything below that pays for itself in a single prevented loop.</p>
+
+        <div class="card" style="margin-top:26px; border-color: var(--color-accent)">
+          <p class="muted" style="margin:0"><b style="color: var(--color-accent)">Founding offer:</b> the first 3 clients lock their price for 24 months. And month one is credited if the first report finds nothing actionable &mdash; so there is no risk in meeting us.</p>
+        </div>
+
+        <div class="grid cols-2 prices" id="plans" style="margin-top:26px">
+          <div class="card price">
+            <h3>Watchtower</h3>
+            <div class="amount">$15,000<span class="muted" style="font-size:1rem">/mo</span></div>
+            <p class="small muted">or $100,000/year &mdash; save $80,000 (5 months free)</p>
+            <ul>
+              <li>Connected to your agent logs &mdash; read-only, scope-limited</li>
+              <li>Instant alerts: loops, silent turns, false success</li>
+              <li>Monthly reliability report with trends and exportable evidence</li>
+              <li>Top failure fixes included every month</li>
+              <li>Business-hours support (response within 1 business day)</li>
+              <li>Cancel monthly anytime</li>
+            </ul>
+            <div class="btnrow">
+              <a class="btn btn-primary" data-checkout="watch_mo" data-product="Watchtower — monthly">Start monthly</a>
+              <a class="btn" data-checkout="watch_yr" data-product="Watchtower — yearly">Start yearly</a>
+            </div>
+          </div>
+
+          <div class="card price featured">
+            <span class="badge">Most complete</span>
+            <h3>Command</h3>
+            <div class="amount">$25,000<span class="muted" style="font-size:1rem">/mo</span></div>
+            <p class="small muted">or $180,000/year &mdash; save $120,000 (about 5 months free)</p>
+            <ul>
+              <li>Everything in Watchtower</li>
+              <li><b>Loop Killer:</b> auto-pause runaway agents</li>
+              <li><b>One-command install</b> into your company (scoped token, kill switch)</li>
+              <li><b>Auto-fix queue:</b> repairs shipped as reviewable PRs</li>
+              <li>Audit-ready evidence pack, every month</li>
+              <li>P-production hardening: dedicated channel, 4-hour SLA</li>
+              <li>Quarterly deep review across every agent</li>
+            </ul>
+            <div class="btnrow">
+              <a class="btn btn-primary" data-checkout="command_mo" data-product="Command — monthly">Start monthly</a>
+              <a class="btn" data-checkout="command_yr" data-product="Command — yearly">Start yearly</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:26px">
+          <h3>What enterprise competitors actually charge</h3>
+          <p class="muted">Observability platforms alone commonly run $25k&ndash;$100k+ per year &mdash; before the engineer who fixes what they find. We do both, in one number. That's the whole pitch.</p>
+          <table class="cmp" style="margin-top:16px">
+            <thead><tr><th scope="col"></th><th scope="col" class="us">Verlobot</th><th scope="col">Dashboards</th><th scope="col">In-house engineer</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Finds silent failures</th><td class="us yes">Yes</td><td>Partial</td><td>When reviewing</td></tr>
+              <tr><th scope="row">Auto-pause runaway loops</th><td class="us yes">Yes (Command)</td><td class="no">No</td><td class="no">Only if watching</td></tr>
+              <tr><th scope="row">Fixes the root cause</th><td class="us yes">Yes</td><td class="no">No</td><td>Yes</td></tr>
+              <tr><th scope="row">Evidence for your customers</th><td class="us yes">Monthly</td><td>Exports</td><td>Ad-hoc</td></tr>
+              <tr><th scope="row">Typical yearly cost</th><td class="us">$100k&ndash;$180k</td><td>$25k&ndash;$100k+</td><td>$120k&ndash;$200k+</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card" style="margin-top:26px">
+          <p class="muted" style="margin:0">Not sure yet? <a href="tool.html">Run the free autopsy</a> first &mdash; it never uploads anything. Questions: <a data-email data-email="text" href="#"></a>. Payments are handled by a licensed Merchant of Record, so you can pay by card with full receipts and local-tax handling.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container row">
+      <span>Verlobot &middot; <a data-email data-email="text" href="#"></a></span>
+      <span class="small"><a href="features.html">Features</a> &middot; <a href="security.html">Security</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="privacy.html">Privacy</a></span>
+      <span class="small">&copy; <span id="year"></span> Verlobot</span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

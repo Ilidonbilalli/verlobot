@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Features — Verlobot</title>
+  <meta name="description" content="Full feature set: autopsy, watchtower, loop killer, auto-fix queue, audit-ready reports, one-command install." />
+  <link rel="icon" href="assets/avatar.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/avatar.png" alt="Verlobot" /> Verlobot</a>
+      <nav class="links">
+        <a href="tool.html">Free Autopsy</a>
+        <a href="features.html" aria-current="page">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="security.html">Security</a>
+        <a class="btn btn-primary" href="pricing.html">Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="tight" style="padding-top:44px">
+      <h1>Features</h1>
+      <p class="lead">Everything below ships. Ordered from free to Command-only. If you want any of it for a 20-minute call, bring your logs.</p>
+
+      <div class="grid cols-3" style="margin-top:26px">
+        <div class="card"><h3>Agent Autopsy <span class="small muted">(free)</span></h3><p class="muted">Browser-based leak scan across 8 failure classes, with exact-turn evidence. Nothing leaves the machine.</p></div>
+        <div class="card"><h3>Instant loop alerts</h3><p class="muted">Identical action repeated 3&times; or an error storm &rarr; you get Slack/email within minutes.</p></div>
+        <div class="card"><h3>Regression guard</h3><p class="muted">A leak that was fixed last month and came back is flagged immediately &mdash; with the diff in behavior.</p></div>
+      </div>
+
+      <div class="grid cols-3">
+        <div class="card"><h3>Monthly reliability report</h3><p class="muted">Score, what broke, what it cost, what we fixed, and what's next &mdash; exportable evidence.</p></div>
+        <div class="card"><h3>Top-fixes included</h3><p class="muted">Every month, the highest-value repairs, shipped as reviewable changes. Never blind edits.</p></div>
+        <div class="card"><h3>Trend history</h3><p class="muted">Watch scores rise month over month so your leadership can see reliability compounding.</p></div>
+      </div>
+
+      <div class="card" style="margin-top:26px; border-color: var(--color-primary)">
+        <h3>Command only</h3>
+        <div class="grid cols-2">
+          <div>
+            <ul class="shield">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Loop Killer</b> &mdash; auto-pause on runaway detection; you resume.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>One-command install</b> (<code class="inline">verlobot init</code>) &mdash; scoped token, kill switch, rollback.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Auto-fix queue:</b> diffs as PRs, with before/after numbers.</span></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="shield">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Audit-ready monthly pack</b> for your customers and auditors.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Dedicated channel + 4-hour SLA</b> (business hours).</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Quarterly deep review</b> across every agent you run.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="term" style="margin-top:16px">
+          <div class="term-bar"><span class="dot" style="background:#EF4444"></span><span class="dot" style="background:#F59E0B"></span><span class="dot" style="background:#22C55E"></span><span class="small muted">install</span></div>
+          <pre><span class="c">$</span> verlobot init --scope read-only --token verlobot_&lt;SCOPED_TOKEN&gt; \
+      --watch ./agent.log --on-loop pause --notify slack, email
+<span class="g">✓</span> connected · read-only · logs stay on your machine
+<span class="g">✓</span> loop-guard armed · auto-pause ready
+<span class="g">✓</span> alert webhook test &rarr; <span class="c">sent</span></pre>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:26px; text-align:center">
+        <h3>Not sure where you stand?</h3>
+        <p class="muted">Run the free autopsy on yesterday's logs. If it finds nothing actionable, month one is on us &mdash; and you keep the report.</p>
+        <div class="toolbar" style="justify-content:center">
+          <a class="btn btn-primary" href="tool.html">Run the free autopsy</a>
+          <a class="btn" href="pricing.html">Compare plans</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container row"><span class="small">&copy; <span id="year"></span> Verlobot</span></div>
+  </footer>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

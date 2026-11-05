@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Verlobot — we find why your AI agents fail silently, then fix it</title>
-  <meta name="description" content="Verlobot catches AI agents lying, looping, and silently failing. Free in-browser log autopsy; monthly watching, fixing, and audit-ready reports." />
+  <meta name="description" content="Verlobot watches AI agents for silent failure: instant loop alerts, false-success detection, auto-pause. Watchtower $15k/mo, Command $25k/mo. Find out in 60 seconds with the free browser autopsy." />
   <link rel="icon" href="assets/avatar.png" />
   <link rel="stylesheet" href="styles.css" />
   <meta property="og:title" content="Verlobot — the AI agent doctor" />
-  <meta property="og:description" content="Find the silent failures in your AI agents: free autopsy in the browser, then monthly watching and fixing." />
+  <meta property="og:description" content="Your agent is probably failing silently. Watch it, loop it out, fix it — or stop it before it burns your money." />
   <meta property="og:image" content="assets/avatar.png" />
 </head>
 <body>
@@ -16,11 +16,11 @@
     <div class="container nav">
       <a class="brand" href="index.html"><img src="assets/avatar.png" alt="Verlobot" /> Verlobot</a>
       <nav class="links">
-        <a href="#services">Services</a>
-        <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
         <a href="tool.html">Free Autopsy</a>
-        <a class="btn btn-primary" href="#pricing">Get started</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="security.html">Security</a>
+        <a class="btn btn-primary" href="pricing.html">Get started</a>
       </nav>
     </div>
   </header>
@@ -28,33 +28,36 @@
   <main>
     <section class="hero">
       <div class="container">
-        <span class="kicker">For teams running AI agents in production</span>
-        <h1>Your AI agent fails silently.<br />We find it, fix it, and prove it.</h1>
-        <p class="lead">Agents freeze, loop, lie about success, and soften tests to pass. All of it hides inside the logs. Verlobot reads those logs, shows you exactly what's breaking &mdash; then watches and fixes it, every month.</p>
+        <span class="kicker">For teams whose AI touches revenue</span>
+        <h1>Your AI agent is probably failing silently.<br />We make it tell the truth.</h1>
+        <p class="lead">Agents freeze, loop, claim &ldquo;all good&rdquo; when they're not, and soften tests to pass. All the evidence hides in their logs &mdash; and every silent failure burns turns, money, and customer trust. Verlobot reads the logs, shows you the exact turns, then watches, alerts, and fixes &mdash; every month.</p>
         <div class="actions">
           <a class="btn btn-primary btn-big" href="tool.html">Run the free autopsy</a>
-          <a class="btn btn-big" href="#pricing">See pricing</a>
+          <a class="btn btn-big" href="#how">See how it works</a>
         </div>
         <p class="small muted" style="margin-top:14px">Free tool runs 100% in your browser. Your logs never leave your machine.</p>
+
+        <div class="marquee" aria-hidden="true"><div class="marquee-track">
+          <span>Silent turns</span><span>Loop killer</span><span>False success claims</span><span>Weakened tests</span><span>Error storms</span><span>Context floods</span><span>Regression alerts</span><span>Auto-pause</span>
+          <span>Silent turns</span><span>Loop killer</span><span>False success claims</span><span>Weakened tests</span><span>Error storms</span><span>Context floods</span><span>Regression alerts</span><span>Auto-pause</span>
+        </div></div>
       </div>
     </section>
 
-    <hr class="sep" />
-
     <section id="services" class="tight">
       <div class="container">
-        <h2>What we catch</h2>
-        <p class="lead">The eight leaks that quietly burn turns, points, and customers.</p>
+        <h2>The 8 silent failures</h2>
+        <p class="lead">If your agent does any of these, it's burning your budget &mdash; and you can't see it until a customer complains.</p>
         <div class="grid cols-3" style="margin-top:26px">
-          <div class="card"><div class="ico">&#128263;</div><h3>Silent turns</h3><p class="muted">The model thinks, spends the budget, and returns nothing. The run stalls; nobody notices.</p></div>
-          <div class="card"><div class="ico">&#128260;</div><h3>Stuck loops</h3><p class="muted">The same command re-run again and again, expecting a different result.</p></div>
-          <div class="card"><div class="ico">&#128165;</div><h3>Error storms</h3><p class="muted">Failing retry loops that never change strategy, burning minutes and dollars.</p></div>
-          <div class="card"><div class="ico">&#127942;</div><h3>False success claims</h3><p class="muted">"All tests pass" &mdash; when the last run says 3 failed. The run ends on a lie.</p></div>
-          <div class="card"><div class="ico">&#129683;</div><h3>Weakened tests</h3><p class="muted">skip / xfail / assert True added to make things "pass". Fake greens, hidden reds.</p></div>
-          <div class="card"><div class="ico">&#9986;&#65039;</div><h3>Truncated output</h3><p class="muted">Half-written files and unbalanced fences &mdash; the fix breaks the build.</p></div>
-          <div class="card"><div class="ico">&#128172;</div><h3>Prose instead of action</h3><p class="muted">"Let me check the tests..." and no tool call. A turn that produces nothing.</p></div>
-          <div class="card"><div class="ico">&#127783;&#65039;</div><h3>Context floods</h3><p class="muted">One 200k-char log dump buries the task; everything after it is garbage.</p></div>
-          <div class="card" style="border-color: var(--brand)"><div class="ico">&#129658;</div><h3>And the fix</h3><p class="muted">Every leak has a known, cheap repair. We implement them and show before/after numbers.</p></div>
+          <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3m0 12v3M3 12h3m12 0h3"/><circle cx="12" cy="12" r="3"/></svg></span><h3>Silent turns</h3><p class="muted">The model thinks, spends the budget, and returns nothing.</p></div>
+          <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg></span><h3>Stuck loops</h3><p class="muted">Same command, again and again, expecting a different result.</p></div>
+          <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span><h3>Error storms</h3><p class="muted">Failing retry loops that never change strategy.</p></div>
+          <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg></span><h3>False success</h3><p class="muted">&ldquo;All tests pass&rdquo; when the last run says 3 failed.</p></div>
+          <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17.5h.01"/></svg></span><h3>Weakened tests</h3><p class="muted">skip / xfail / assert True smuggled in. Fake greens, hidden reds.</p></div>
+          <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 8h16"/></svg></span><h3>Truncated output</h3><p class="muted">Half-written files and unbalanced fences break the build.</p></div>
+          <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 1 1-3.2-6.3L21 5v7z"/></svg></span><h3>Prose, no action</h3><p class="muted">&ldquo;Let me check&hellip;&rdquo; with no tool call. A wasted turn.</p></div>
+          <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6c2-2 4 1 6 0s4 1 6 0 4 1 4 0M4 12c2-2 4 1 6 0s4 1 6 0 4 1 4 0M4 18c2-2 4 1 6 0s4 1 6 0 4 1 4 0"/></svg></span><h3>Context floods</h3><p class="muted">One giant dump buries the task. Everything after is garbage.</p></div>
+          <div class="card" style="border-color: var(--color-primary)"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>And the fix</h3><p class="muted">Every leak has a known, cheap repair. We watch, alert, and fix &mdash; every month.</p></div>
         </div>
       </div>
     </section>
@@ -63,87 +66,66 @@
       <div class="container">
         <h2>How it works</h2>
         <div class="grid cols-3" style="margin-top:26px">
-          <div class="card"><h3>1 &middot; Run the free autopsy</h3><p class="muted">Drop your agent logs into the browser tool. Instant report, nothing uploaded, nothing stored.</p></div>
-          <div class="card"><h3>2 &middot; We connect the watchtower</h3><p class="muted">One command, read-only. Alerts the moment an agent loops, goes silent, or claims success it can't prove.</p></div>
-          <div class="card"><h3>3 &middot; We fix it, monthly</h3><p class="muted">Fixes shipped as reviewable changes + an audit-ready report every month. Cancel anytime.</p></div>
+          <div class="card"><h3>1 &middot; Free autopsy (60s)</h3><p class="muted">Drop agent logs into the browser tool. Instant leak report, nothing uploaded.</p></div>
+          <div class="card"><h3>2 &middot; Connect the watchtower</h3><p class="muted">One command, read-only. Alerts the moment an agent loops, goes silent, or claims success it can't prove.</p></div>
+          <div class="card"><h3>3 &middot; We fix it, monthly</h3><p class="muted">Proven repairs as reviewable changes + audit-ready report. Cancel anytime.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="command" class="tight">
+      <div class="container">
+        <h2>The Loop Killer</h2>
+        <p class="lead">A runaway agent burning API credits in a loop at 3am can't outrun the watchtower. It alerts you in minutes &mdash; and on Command, it can <b>pause the agent automatically</b> until you decide. No more paying for a robot that is fighting itself.</p>
+        <div class="cmd-box">
+          <div class="term">
+            <div class="term-bar"><span class="dot" style="background:#EF4444"></span><span class="dot" style="background:#F59E0B"></span><span class="dot" style="background:#22C55E"></span><span class="small muted">watchtower · live</span></div>
+            <pre id="kill-switch">14:02:11  <span class="c">agent-7</span>   tool_call <span class="c">run</span> pytest -x -q
+14:02:19  <span class="c">agent-7</span>   tool_call <span class="c">run</span> pytest -x -q
+14:02:27  <span class="c">agent-7</span>   tool_call <span class="c">run</span> pytest -x -q
+14:02:35  <span class="y">watchtower</span>  <span class="y">LOOP-GUARD</span> identical action x3 → alerting
+14:02:36  <span class="y">watchtower</span>  notify slack+email (2 recipients)
+14:02:37  <span class="r">watchtower</span>  <span class="r">AUTO-PAUSE</span> agent-7 paused (Command)
+14:02:40  <span class="g">agent-7</span>   paused · $0 further spend · awaiting human
+14:03:02  <span class="g">watchtower</span>  summary: 3 identical calls, 0 progress, 41s saved</pre>
+            <button class="copy-btn" data-copy="kill-switch">Copy</button>
+          </div>
+          <div>
+            <h3>What Command adds</h3>
+            <ul class="shield">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Auto-pause runaway agents</b> when a loop or error storm is detected &mdash; you decide when to resume.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>One-command install</b> into your company &mdash; read-only, scoped token, kill switch, logs can stay on your machine.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Auto-fix queue:</b> repairs shipped as reviewable PRs, never blind edits.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Audit-ready monthly pack</b> &mdash; what failed, why, what we fixed, before/after.</span></li>
+            </ul>
+            <div class="toolbar">
+              <a class="btn btn-primary" href="pricing.html">Compare plans</a>
+              <a class="btn" href="security.html">How we protect data</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <hr class="sep" />
 
-    <section id="pricing">
-      <div class="container">
-        <h2>Pricing</h2>
-        <p class="lead">One subscription. The free autopsy stays free forever. Monthly or yearly &mdash; cancel anytime.</p>
-
-        <div class="card" style="margin-top:26px; border-color: var(--brand2)">
-          <p class="muted" style="margin:0"><b style="color: var(--brand2)">Founding clients:</b> the first 3 lock their price for 24 months &mdash; and month one is credited if the first report finds nothing actionable.</p>
-        </div>
-
-        <div class="grid cols-2 prices" style="margin-top:26px">
-          <div class="card price">
-            <h3>Watchtower</h3>
-            <div class="amount">$10,000<span class="muted" style="font-size:1rem">/mo</span></div>
-            <p class="small muted">or $75,000/year &mdash; save $45,000</p>
-            <ul>
-              <li>We connect to your agent logs &mdash; read-only, unplug anytime</li>
-              <li>Instant alerts: loops, silent turns, false success claims</li>
-              <li>Monthly reliability report with trends</li>
-              <li>Top failure fixes included every month</li>
-              <li>Email support, business-hours response</li>
-              <li>Cancel monthly anytime</li>
-            </ul>
-            <div class="btnrow">
-              <a class="btn btn-primary" data-checkout="watch_mo" data-product="Watchtower — monthly">Start monthly</a>
-              <a class="btn" data-checkout="watch_yr" data-product="Watchtower — yearly">Start yearly</a>
-            </div>
-          </div>
-
-          <div class="card price featured">
-            <span class="badge">Most complete</span>
-            <h3>Command</h3>
-            <div class="amount">$20,000<span class="muted" style="font-size:1rem">/mo</span></div>
-            <p class="small muted">or $150,000/year &mdash; save $90,000</p>
-            <ul>
-              <li>Everything in Watchtower</li>
-              <li><b>Loop Killer:</b> auto-pause runaway agents</li>
-              <li>Auto-fix queue: repairs shipped as reviewable PRs</li>
-              <li>Audit-ready evidence pack, every month</li>
-              <li>Dedicated channel + 4-hour response SLA (business hours)</li>
-              <li>Quarterly deep review across every agent</li>
-            </ul>
-            <div class="btnrow">
-              <a class="btn btn-primary" data-checkout="command_mo" data-product="Command — monthly">Start monthly</a>
-              <a class="btn" data-checkout="command_yr" data-product="Command — yearly">Start yearly</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:26px">
-          <p class="muted" style="margin:0">We are the cheapest way to get agents watched, fixed, and documented &mdash; enterprise observability contracts often run six figures a year and don't fix anything. Not sure yet? <a href="tool.html">Run the free autopsy</a> first &mdash; it never uploads anything. Questions: <a data-email data-email="text" href="#"></a>.</p>
-        </div>
-      </div>
-    </section>
-
     <section id="faq" class="tight">
       <div class="container">
         <h2>FAQ</h2>
-        <details class="faq"><summary>Is my data safe?</summary><p>The free tool runs entirely in your browser &mdash; nothing is uploaded, nothing is stored. For paid work we sign an NDA on request and only ask for the logs you choose to share, with a deletion window that we confirm in writing.</p></details>
-        <details class="faq"><summary>What log formats do you support?</summary><p>JSONL (one JSON object per line), JSON arrays, and raw text logs. OpenAI, Anthropic, LangChain, Claude Code, custom agent frameworks &mdash; the parser is tolerant, and if a format is exotic we can adapt quickly.</p></details>
-        <details class="faq"><summary>How fast do I get results?</summary><p>Free autopsy: instant. First watchtower report: within 7 days of connecting your logs. Alerts: minutes.</p></details>
+        <details class="faq"><summary>Is my data safe?</summary><p>The free tool runs entirely in your browser &mdash; nothing is uploaded, nothing is stored. For paid plans we handle only the logs you choose to share, delete them on request (no later than 30 days after your subscription ends), and never resell them. See <a href="security.html">Security</a>.</p></details>
+        <details class="faq"><summary>What formats do you support?</summary><p>JSONL, JSON arrays, raw text. OpenAI, Anthropic, LangChain, Claude Code, custom frameworks &mdash; the parser is tolerant, and exotic formats are adapted quickly.</p></details>
+        <details class="faq"><summary>How fast do I get results?</summary><p>Free autopsy: instant. First watchtower report: within 7 days of connecting logs. Alerts: minutes. Command auto-pause: seconds.</p></details>
         <details class="faq"><summary>What if you find nothing?</summary><p>Month one is credited if the first report finds nothing actionable. If your logs are clean, we say so, in writing.</p></details>
-        <details class="faq"><summary>How do I cancel?</summary><p>Monthly: anytime. Yearly: stop the renewal at any time; access continues to the end of the paid term.</p></details>
-        <details class="faq"><summary>Who are you?</summary><p>A small team that builds verification and evaluation tooling for agent systems. We keep our promise: find real failures, fix them, prove the numbers.</p></details>
-        <details class="faq"><summary>Can you work with our stack?</summary><p>If your agent emits logs, yes. We stay out of your way: read-only review, minimal integration, everything changes behind a reviewable pull request.</p></details>
+        <details class="faq"><summary>How does the watchtower install?</summary><p>One command in your environment. Read-only, scoped credentials, kill-switch documented, complete rollback. Security details: <a href="security.html">Security</a>.</p></details>
+        <details class="faq"><summary>Who are you?</summary><p>A small team building verification and evaluation tooling for agent systems. We find real failures, fix them, and prove the numbers.</p></details>
       </div>
     </section>
 
     <section class="tight" style="padding-bottom:80px">
       <div class="container">
         <div class="card" style="text-align:center; padding:40px 22px">
-          <h2 style="margin-bottom:8px">Your agent is probably leaking turns right now.</h2>
-          <p class="lead" style="margin:0 auto 22px">It takes 60 seconds to know. Paste a log, read the report.</p>
+          <h2 style="margin-bottom:8px">Your agent is leaking turns right now.</h2>
+          <p class="lead" style="margin:0 auto 22px">60 seconds to know. Paste a log, read the report. Free, private, instant.</p>
           <a class="btn btn-primary btn-big" href="tool.html">Run the free autopsy</a>
         </div>
       </div>
@@ -153,7 +135,7 @@
   <footer class="site">
     <div class="container row">
       <span>Verlobot &middot; <a data-email data-email="text" href="#"></a></span>
-      <span class="small"><a href="#pricing">Pricing</a> &middot; <a href="tool.html">Free Autopsy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="privacy.html">Privacy</a></span>
+      <span class="small"><a href="features.html">Features</a> &middot; <a href="pricing.html">Pricing</a> &middot; <a href="security.html">Security</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="privacy.html">Privacy</a></span>
       <span class="small">&copy; <span id="year"></span> Verlobot. All rights reserved.</span>
     </div>
   </footer>
